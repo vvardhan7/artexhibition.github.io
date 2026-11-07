@@ -1,11 +1,250 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My GitHub Pages Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Art Portfolio</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #eaeaea;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #666;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #000;
+        }
+
+        /* Hero Section */
+        .hero {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Art Gallery Grid */
+        .gallery-container {
+            max-width: 1200px;
+            margin: 0 auto 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .gallery-item {
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            display: block;
+            background-color: #eee; /* Placeholder background */
+        }
+
+        .artwork-info {
+            padding: 1.5rem;
+        }
+
+        .artwork-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .artwork-meta {
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #ffffff;
+            border-top: 1px solid #eaeaea;
+            padding: 2rem 0;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>Welcome to my brand new website hosted on GitHub Pages.</p>
+
+    <!-- Header Navigation -->
+    <header>
+        <nav>
+            <div class="logo">My Art Studio</div>
+            <ul class="nav-links">
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Introduction -->
+    <section class="hero">
+        <h1>Beautiful Artwork</h1>
+        <p>Welcome to my digital gallery. Explore a collection of curated original pieces, fine art prints, and creative expressions.</p>
+    </section>
+
+    <!-- Main Gallery -->
+    <main class="gallery-container" id="gallery">
+        <div class="gallery-grid">
+            
+            <!-- Artwork Item 1 -->
+            <div class="gallery-item">
+                <!-- Replace 'artwork1.jpg' with your actual image path -->
+                <img src="artwork1.jpg" alt="Title of Artwork 1">
+                <div class="artwork-info">
+                    <h3 class="artwork-title">Serenity in Chaos</h3>
+                    <p class="artwork-meta">Oil on Canvas, 2026</p>
+                </div>
+            </div>
+
+            <!-- Artwork Item 2 -->
+            <div class="gallery-item">
+                <!-- Replace 'artwork2.jpg' with your actual image path -->
+                <img src="artwork2.jpg" alt="Title of Artwork 2">
+                <div class="artwork-info">
+                    <h3 class="artwork-title">Whispers of Autumn</h3>
+                    <p class="artwork-meta">Watercolor, 2025</p>
+                </div>
+            </div>
+
+            <!-- Artwork Item 3 -->
+            <div class="gallery-item">
+                <!-- Replace 'artwork3.jpg' with your actual image path -->
+                <img src="artwork3.jpg" alt="Title of Artwork 3">
+                <div class="artwork-info">
+                    <h3 class="artwork-title">Urban Echoes</h3>
+                    <p class="artwork-meta">Acrylic & Mixed Media, 2026</p>
+                </div>
+            </div>
+
+            <!-- Artwork Item 4 -->
+            <div class="gallery-item">
+                <!-- Replace 'artwork4.jpg' with your actual image path -->
+                <img src="artwork4.jpg" alt="Title of Artwork 4">
+                <div class="artwork-info">
+                    <h3 class="artwork-title">Midnight Solitude</h3>
+                    <p class="artwork-meta">Digital Painting, 2026</p>
+                </div>
+            </div>
+
+            <!-- Artwork Item 5 -->
+            <div class="gallery-item">
+                <!-- Replace 'artwork5.jpg' with your actual image path -->
+                <img src="artwork5.jpg" alt="Title of Artwork 5">
+                <div class="artwork-info">
+                    <h3 class="artwork-title">Golden Hour</h3>
+                    <p class="artwork-meta">Oil on Canvas, 2024</p>
+                </div>
+            </div>
+
+            <!-- Artwork Item 6 -->
+            <div class="gallery-item">
+                <!-- Replace 'artwork6.jpg' with your actual image path -->
+                <img src="artwork6.jpg" alt="Title of Artwork 6">
+                <div class="artwork-info">
+                    <h3 class="artwork-title">Abstract Reflections</h3>
+                    <p class="artwork-meta">Gouache, 2025</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 My Art Studio. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
-#Create index.html
+
