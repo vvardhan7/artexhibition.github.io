@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - My Art Studio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #eaeaea;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #666;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #000;
+        }
+
+        .about-container {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            padding: 3rem;
+        }
+
+        .about-container h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .about-container p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 1.2rem;
+        }
+
+        footer {
+            background-color: #ffffff;
+            border-top: 1px solid #eaeaea;
+            padding: 2rem 0;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .about-container {
+                padding: 1.5rem;
+                margin: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <nav>
+            <div class="logo">My Art Studio</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main About Content -->
+    <main class="about-container">
+        <h1>About Me</h1>
+        <p><strong>Welcome! I’m [Name].</strong></p>
+        <p>For as long as I can remember, creating has been my way of processing the world. Art has been my quiet refuge after long days, my outlet for big emotions, and my favorite way to capture the simple, overlooked beauty in everyday life.</p>
+        <p>Every piece you see on this site started as a tiny spark—a specific shade of sunset, a feeling I couldn't put into words, or an experiment that took a completely unexpected turn. Starting out, I spent so much time doubting whether my voice mattered or if my style was "good enough." Learning to silence that inner critic and simply trust the process was the hardest, but most rewarding, thing I’ve ever done.</p>
+        <p>To anyone reading this who feels that pull to create: don’t wait until you feel ready. Your unique perspective is your superpower. Pick up the pencil, mix the colors, write the line, and trust your hands. The world always has room for more authentic art.</p>
+        <p>Thank you for being here and supporting independent work. I hope these pieces bring a sense of warmth, light, or reflection into your home.</p>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 My Art Studio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
